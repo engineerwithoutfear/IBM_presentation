@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>IBM - End of Summer Presentation</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	    crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/blood.css">
+	<link rel="stylesheet" href="plugin/markdown/marked.js">
+	<link rel="stylesheet" href="plugin/markdown/markdown.js">
+	<link rel="stylesheet" href="lib/css/ir-black.css">
+	<link rel="stylesheet" href="lib/css/myStyles.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<div class="slide-content">
+					<h2 data-fragment-index="0" class="fragment fade-down ">Cassandra Newcomer</h2>
+					<h5 data-fragment-index="0" class="fragment fade-in ">and the</h5>
+					<h3 data-fragment-index="0" class="fragment fade-in ">Summer on the Hudson</h3>
+				</div>
+
+			</section>
+			<section>
+				<div class="slide-content school-wrapper">
+					<div data-fragment-index="0" class="school-name fragment fade-down">
+						<h2>School</h2>
+					</div>
+
+					<div data-fragment-index="1" class="school-deets fragment fade-left red-circle-border ">
+						<div>
+							<div data-fragment-index="1" class="fragment fade-in qc-logo">
+								<img src="img/qc_logo.jpg">
+							</div>
+							<div data-fragment-index="2" class="fragment fade-in-then-semi-out  ">Computer Science</div>
+							<div class="fragment fade-in-then-out  ">
+								(
+								<em>Not</em> in the UK.)</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section>
+				<div class="slide-header prologue fragment fade-in">
+					<h2>Prologue to Poughkeepsie</h2>
+				</div>
+				<div class="slide-content prologue">
+					<ul>
+						<li class="fragment fade-in">started programming in 2016 (FreeCodeCamp)</li>
+						<li class="fragment fade-in">90% of EXP in webdev/JS</li>
+						<li class="fragment fade-in">CS major as of Spring 2018</li>
+						<li class="fragment fade-in">before that, worked in the CCNY physics dept...</li>
+
+					</ul>
+				</div>
+			</section>
+			<section class="science-sim " data-background-iframe="https://codepen.io/engineerwithoutfear/full/VjpPKa">
+			</section>
+			<section>
+				<div data-fragment-index="0" class="slide-header ibm-team fragment fade-in ">
+					<div class="ibm-blankdrop">
+						<div class="ibm-backdrop">
+							<p class="ibm-logo">IBM</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide-content">
+					<h2 data-fragment-index="0" class="fragment fade-in  red-underline">Websphere Liberty</h2>
+					<h2 data-fragment-index="1" class="fragment fade-in">Java Batch Team</h2>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header summarized fragment fade-down">
+					<h2>My Summer, Summarized</h2>
+				</div>
+				<div class="slide-content summarized">
+					<ul>
+						<li class="fragment fade-in">Migrated Issues from GitLab to Github</li>
+						<li class="fragment fade-in">Learned How To Use a Mac</li>
+						<li class="fragment fade-in">Built Java Batch Sample App</li>
+						<li class="fragment fade-in">Introduced to Java EE</li>
+
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div data-fragment-index="1" class="slide-header migration fragment fade-down">
+					<h3> Migrate issues from GitLab to Github</h3>
+				</div>
+				<div class="slide-content migration">
+					<h5 class="fragment fade-in" data-fragment-index="3">Codename: Arctic Tern 🐦</h5>
+					<img src="img/github_api.png" class="fragment fade-in" data-fragment-index="3">
+				</div>
+			</section>
+			<section>
+				<div class="slide-content ">
+					<a href="https://github.ibm.com/Cassandra-Newcomer/arctic-tern/blob/master/project_issues.json" target="_blank">
+						<img src="img/arctic_terns_migrating.JPG">
+					</a>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header considerations fragment fade-down">
+					<h3>Arctic Tern - Considerations</h3>
+				</div>
+				<div class="slide-content considerations">
+					<div>How to upload the issues? 🤔</div>
+					<ul>
+						<li class="fragment fade-in">Issues must be uploaded in order to preserve references.</li>
+						<li class="fragment fade-in">No way to delete an issue...except to delete the repo.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="slide-header unforseen fragment fade-down">
+					<h5>Unforseen Issues Encountered</h5>
+				</div>
+				<div class="slide-content unforseen">
+					<ul>
+						<li class="fragment fade-in">GitHub descriptions cannot be more than 100 chars long.</li>
+						<ul>
+							<li class="fragment fade-in">Fix: auto-truncate overly wordy issues.</li>
+						</ul>
+						<li class="fragment fade-in">Issues are being double-uploaded!? </li>
+						<ul>
+							<li class="fragment fade-in">Fix: Solved by removing nodemon!</li>
+						</ul>
+						<li class="fragment fade-in">The label description field is blank!</li>
+						<ul>
+							<li class="fragment fade-in">Fix: add header { 'Accept' : 'application/vnd.github.symmetra-preview+json' } to any calls returning, creating or
+								updating labels
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header unforseen fragment fade-down">
+					<h5>Unforseen Issues Encountered</h5>
+				</div>
+				<div class="slide-content unforseen">
+					<ul>
+						<li class="fragment fade-in">Uploading to GitHub API is asynchronous.</li>
+						<ul>
+							<li class="fragment fade-in">Fix: use new JS features (eg, async/await)
+							</li>
+						</ul>
+						<li class="fragment fade-in">Issues cannot be opened in a closed state.</li>
+						<ul>
+							<li class="fragment fade-in">Fix: Added an auto-closing function that runs after all issues are uploaded.
+							</li>
+						</ul>
+						<li class="fragment fade-in">Hex prefixes (#) must be removed for api to assign label colors correctly.</li>
+						<ul>
+							<li class="fragment fade-in">Fix: slice off the first char of the exported label color field.</li>
+						</ul>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="slide-content">
+					<a href="https://github.ibm.com/Cassandra-Newcomer/arctic-tern/blob/master/uploader.js">
+						<img src="img/batched_up.png"> </a>
+				</div>
+			</section>
+			<section>
+
+				<div class="slide-content">
+					<p>Invasion</p>
+					<img src="img/javascript_invades.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down mac" data-fragment-index="0">
+					<h3>Learning to Use a Mac</h3>
+				</div>
+				<div class="slide-content fragment fade-in mac" data-fragment-index="0">
+					<img src="img/mac_for_me.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down mac" data-fragment-index="0">
+					<h3>Learning to Use a Mac</h3>
+				</div>
+				<div class="slide-content fragment fade-in mac" data-fragment-index="0">
+					<img src="img/mac_txtfile.png">
+				</div>
+			</section>
+			<section>
+
+				<div class="slide-content tweetnapper-intro">
+					<div class="fragment fade-down tweetnapper-intro">
+						<h3>Sample Java Batch App</h3>
+					</div>
+					<div class="fragment fade-in tweetnapper-intro aka">aka</div>
+					<div class="fragment fade-in red-underline tweetnapper-intro the-tweetnapper">The Tweetnapper</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down" data-fragment-index="0">
+					<h3>Typical NYC Commute</h3>
+				</div>
+				<div class="slide-content fragment fade-in" data-fragment-index="0">
+					<img src="img/mta_disaster.jpeg">
+				</div>
+			</section>
+			<section>
+				<div class="slide-content fragment fade-in">
+					<img src="img/twitter_abyss.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down snatcher-overview">
+					<h3>An Excellent Dataset</h3>
+				</div>
+				<div class="slide-content snatcher-overview">
+					<ul>
+						<li class="fragment fade-in">6 million daily riders</li>
+						<li class="fragment fade-in">70,000 delays per month, on-time rate of 64%</li>
+						<li class="fragment fade-in">3 month survey: 74% late to work, 13% lost wages, 2% fired (!) </li>
+						<li class="fragment fade-in">New Yorkers are known for their large and creative vocabularies</li>
+						<li class="fragment fade-in">Studying these tweets is useful, entertaining, and a good way to advertise IBM Batch technology</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down snatcher-components" data-fragment-index="1">
+					<h3>Tweetnapper Components</h3>
+				</div>
+				<div class="slide-content snatcher-components fragment fade-in" data-fragment-index="1">
+					<ul>
+						<li class="fragment fade-in highlight-current-blue">Tweet Snatcher </li>
+						<li class="fragment fade-in highlight-current-green">Tweet Batcher</li>
+						<li class="fragment fade-in highlight-current-red">Tweet Fetcher</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down board" data-fragment-index="1">
+					<h3>Plotting the Tweetnapper</h3>
+				</div>
+
+				<div class="slide-content board  fragment fade-in" data-fragment-index="1">
+					<a href="img/tweetnapper_board.jpg" target="_blank">
+						<img src="img/tweetnapper_board.jpg" class="tweetnapper-board">
+					</a>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down snatcher-overview" data-fragment-index="1">
+					<h3>Tweet Snatcher - Overview</h3>
+				</div>
+				<div class="slide-content snatcher-overview fragment fade-in" data-fragment-index="1">
+					<div>Objectives:</div>
+					<ul>
+						<li class="fragment fade-in">Access the Twitter API</li>
+						<li class="fragment fade-in">Get MTA related tweets</li>
+						<li class="fragment fade-in">Save for later batch processing</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="slide-content fragment fade-in  ">
+					<img src="img/twitterAPI.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down" data-fragment-index="1">
+					<h3>Tweet Snatcher - Metadata</h3>
+				</div>
+
+				<div class="slide-content tweet-metadata fragment fade-in" data-fragment-index="1">
+					<img src="img/charts_metadata.png">
+					<!-- <div class="slide-content panel-metadata">
+						<div class="slide-content panel-header">Account field:</div>
+						<ul>
+							<li>screen name (@myhandle)</li>
+							<li>real name (Namey McName)</li>
+							<li>location (“New York, NY”)</li>
+							<li>description (“I ride the MTA a lot.”)</li>
+							<li>followers (influence?)</li>
+						</ul>
+					</div>
+					<div class="slide-content panel-metadata">
+						<div class="slide-content panel-header">Status field:</div>
+						<ul>
+							<li>date</li>
+							<li>Account</li>
+							<li>text content</li>
+							<li>location</li>
+							<li>geolocation</li>
+							<li>urls/images</li>
+							<li>retweet count</li>
+							<li>favorite count</li>
+							<li>sentiment (w)</li>
+							<li>topics/stations/borough (w)</li>
+							<li>is Retweet? -> original Tweet</li>
+							<li>is Quote? -> original Tweet</li>
+						</ul>
+					</div> -->
+				</div>
+			</section>
+			<section>
+				<div class="slide-header">
+					<h3 class="fragment fade-down">Tweet Snatcher - Considerations</h3>
+				</div>
+				<div class="slide-content">
+					<div>How to get the tweets? 🤔</div>
+					<ul>
+						<li class="fragment fade-in">Use Twitter4J to talk to the Twitter API.</li>
+						<li class="fragment fade-in">Stream the tweets.</li>
+						<li class="fragment fade-in">Filter the tweets by:</li>
+						<ul>
+							<li class="fragment fade-in">Bounding box coords</li>
+							<li class="fragment fade-in">Keywords: @MTA, #MTA, MTA, etc</li>
+						</ul>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="slide-header">
+					<h3 class="fragment fade-down">Tweet Snatcher - Considerations</h3>
+				</div>
+				<div class="slide-content">
+					<ul>
+						<li class="fragment fade-in">When tweet comes in, check to see if "yyyy_mm_dd__hh_mm.txt" exists in the temp folder for the current time, and create
+							it if needed. </li>
+						<li class="fragment fade-in">If a new .txt file was made, move the old one to the archive folder</li>
+						<li class="fragment fade-in">Save the JSON of the tweet to the .txt file as a single line.</li>
+						<li class="fragment fade-in">Concat all the individual tiny files in the archive folder into one big file.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="slide-content fetcher-overview fragment fade-in">
+					<a href="img/obesity_charge.png" target="_blank">
+						<img src="img/obesity_charge.png">
+					</a>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header fragment fade-down">
+					<h3>Tweet Batcher - Overview</h3>
+				</div>
+				<div class="slide-content fragment fade-in">
+					<div>Batch processes:</div>
+					<ul>
+						<li class="fragment fade-in">Reading (the source)</li>
+						<li class="fragment fade-in">Processing (the tweets)</li>
+						<li class="fragment fade-in">Writing (to the db)</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="slide-header considerations">
+					<h3 class="fragment fade-in-then-semi-out">Tweet Batcher - Considerations</h3>
+				</div>
+				<div class="slide-content considerations">
+					<p class="fade-in-then-semi-out">How to analyze the tweets? 🤔</p>
+					<h2 class="fragment fade-in">By using as many IBM products as possible!</h2>
+				</div>
+			</section>
+			<section>
+				<div class="slide-header">
+					<h3 class="fragment fade-in">Enter the Watson</h3>
+				</div>
+				<div class="slide-content">
+					<ul>
+						<li class="fragment fade-in">The Watson SDK for Java</li>
+						<li class="fragment fade-in-then-semi-out"> Tone Analyzer</li>
+						<li class="fragment fade-in">Natural Language Understanding</li>
+						<ul>
+							<li class="fragment fade-in">sentiment ranges from -1 to 1</li>
+							<li class="fragment fade-in">can be matched to emojis to communicate sentiment 🤩 🤔 🤨 😐 😑 🙄 😏 😣 😥 😮 </li>
+							<li class="fragment fade-in">can also isolate keywords and organization</li>
+						</ul>
+						<li class="fragment fade-in">Image Recognition?</li>
+						<li class="fragment fade-in">Machine Learning?</li>
+
+					</ul>
+				</div>
+			</section>
+			<section class="center">
+				<div class="slide-header">
+					<h3 class="fragment fade-in">Tweet Batcher - Reader/Processor/Writer</h3>
+				</div>
+				<div class="slide-content">
+					<ul>
+						<li class="fragment fade-in">(Reader) Reads single line from .txt file</li>
+						<li class="fragment fade-in">(Processor) Transforms line of text into JSON</li>
+						<li class="fragment fade-in">(Processor) Transforms json into Java</li>
+						<li class="fragment fade-in">(Processor) Uses Watson Natural Language Understanding API to determine sentiment and analyze metadata</li>
+						<li class="fragment fade-in">(Processor) Calculates tweet's popularity (Popularity = Retweets + Favorites)</li>
+						<li class="fragment fade-in">(Writer) Saves processed tweet to a Derby DB using JPA</li>
+					</ul>
+
+				</div>
+			</section>
+			<section>
+				<div class="slide-content tweet-persisted">
+					<img src="img/tweet_persisted.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header">
+					<h3 class="fragment fade-in">Tweet Fetcher - Overview</h3>
+				</div>
+				<div class="slide-content">
+					<ul>
+						<li class="fragment fade-in">Fetcher serves React web application to the browser</li>
+						<li class="fragment fade-in">React requests a segment of tweets (latest, greatest, etc) on page load/user request</li>
+						<li class="fragment fade-in">REST API receives request, queries Derby DB</li>
+						<li class="fragment fade-in">REST API receives response, converts Tweet Object from DB format -> Java (via JPA) and then Java -> JSON (via Google
+							Gson)...kind of like shifting gears on a bicycle
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="slide-header fetcher-overview fragment fade-down">
+					<h3>Tweet Fetcher - Overview</h3>
+				</div>
+				<div class="slide-content fetcher-overview fragment fade-in">
+					<ul>
+						<li class="fragment fade-in">REST API sends the JSON to the browser</li>
+						<li class="fragment fade-in">React.js inserts JSON into appropriate divs</li>
+						<li class="fragment fade-in">All routing, rendering, and data visualization done on the front end</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="slide-content fetcher-overview fragment fade-in">
+					<img src="img/napper_doubletweeting.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header learning-ee fragment fade-down" data-fragment-index="1">
+					<h2>Learning Java EE</h2>
+				</div>
+				<div class="slide-content learning-ee fragment fade-in" data-fragment-index="1">
+					<img src="img/learning_java_EE.jpg">
+				</div>
+			</section>
+			<section>
+				<div class="slide-header  fragment fade-down" data-fragment-index="1">
+					<h2>"Basic" Java EE</h2>
+				</div>
+				<div class="slide-content  fragment fade-in" data-fragment-index="1">
+					<img src="img/java_ee_arch.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-content  fragment fade-in">
+					<img src="img/java_EE.png">
+				</div>
+			</section>
+			<section>
+				<div class="slide-content  fragment fade-in">
+					<img src="img/im_the_future.png">
+					<h2 class="fragment fade-in">The Future</h2>
+				</div>
+			</section>
+			<!-- <section class="my-portfolio" data-background-iframe="http://engineerwithoutfear.github.io/">
+			</section> -->
+			<section class="contact-info">
+				<div class="slide-content">
+					<h3>Farewell, IBM! </h3>
+					<h5>But let's stay in touch. 🙂</h5>
+					<div>
+						<p>
+							<i class="fas fa-envelope-square"> cassandra.newcomer@gmail.com</i>
+						</p>
+						<p>
+							<i class="fab fa-github-square"> engineerwithoutfear</i>
+						</p>
+						<p>
+							<i class="fas fa-portrait"> engineerwithoutfear.github.io</i>
+						</p>
+
+						<p>
+							<i class="fas fa-file-code"> github.ibm.com/Cassandra-Newcomer/sample-batch-tweetnapper</i>
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			center: false,
+			// transition: 'slide',
+			// transitionSpeed: 'slow',
+			// backgroundTransition: 'slide'
+			// transition: 'zoom',
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+
+		function resetSlideScrolling(slide) {
+			$(slide).removeClass('scrollable-slide');
+		}
+
+		function handleSlideScrolling(slide) {
+			if ($(slide).height() >= 800) {
+				$(slide).addClass('scrollable-slide');
+			}
+		}
+
+		Reveal.addEventListener('ready', function (event) {
+			handleSlideScrolling(event.currentSlide);
+		});
+
+		Reveal.addEventListener('slidechanged', function (event) {
+			resetSlideScrolling(event.previousSlide)
+			handleSlideScrolling(event.currentSlide);
+		});
+	</script>
+</body>
+
+</html>

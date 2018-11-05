@@ -1,0 +1,299 @@
+section {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    min-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    /* border: 1px solid white !important; */
+}
+
+.slide-content>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    /* border: 1px solid white !important; */
+}
+
+.slide-content,
+.slide-header,
+section>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid white !important; */
+}
+
+.slide-content.side-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-header.prologue,
+.slide-header.summarized,
+.slide-header.migration,
+.slide-header.unforseen,
+.slide-header.considerations,
+.slide-header.learning-ee .slide-header.mac,
+.slide-header.snatcher-overview {
+    height: 30%;
+    padding-top: 30px;
+}
+
+.slide-content.prologue,
+.slide-content.summarized,
+.slide-content.unforseen,
+.slide-content.migration,
+.slide-content.considerations,
+.slide-content.mac,
+.slide-content.learning-ee .slide-content.snatcher-overview {
+    height: 70%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.slide-content.mac>* {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.slide-header.tweetnapper-intro {
+    height: 30%;
+    width: 100%;
+}
+
+.slide-content.tweetnapper-intro {
+    height: 80%;
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweetnapper-intro.the-tweetnapper {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.slide-content.snatcher-components {
+    /* height: 80%; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-header.snatcher-components {
+    /* height: 20%; */
+    width: 100%;
+    /* justify-content: center;
+    align-items:center; */
+}
+
+.slide-header.board {
+    width: 100%;
+    height: 20%;
+}
+
+.slide-content.board {
+    height: 80%;
+}
+
+.slide-content.board>a {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-underline {
+    border-bottom: 5px solid rgb(145, 18, 18) !important;
+}
+
+.intro {
+    justify-content: center !important;
+    align-items: center;
+}
+
+.slide-content.school-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slide-header {
+    width: 100%;
+    height: 30%;
+}
+
+.slide-content.tweet-metadata {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green !important; */
+}
+
+.slide-content.tweet-metadata>* {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    /* height: 100%; */
+    font-size: 1.5rem !important;
+}
+
+.panel-header {
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid green !important; */
+}
+
+.panel-metadata>ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* justify-content: center; */
+}
+
+.tweet-persisted {
+    width: 100%;
+}
+
+.qc-logo img {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qc-logo {
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.school-deets,
+.school-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-deets,
+.school-deets>div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.school-deets {
+    border-radius: 50%;
+    border-left: 1px solid red !important;
+    padding-left: 10% !important;
+}
+
+.school-name {
+    padding-right: 10% !important;
+}
+
+.science-sim {
+    /* display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%; */
+    /* height: 80vh;  */
+}
+
+.slide-header.ibm-team {
+    height: 100%;
+}
+
+.ibm-blankdrop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ibm-backdrop {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( to bottom, #1f70c1, #1f70c1 50%, white 50%, white);
+    background-size: 100% 40px;
+    background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid green !important; */
+    padding: 0;
+}
+
+.ibm-logo {
+    display: flex;
+    /* flex-direction:column; */
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+    background-clip: text;
+    color: transparent !important;
+    text-shadow: none !important;
+    -webkit-text-stroke: 5px white;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-size: 15rem !important;
+    font-weight: bold !important;
+    height: 100%;
+}
+
+.my-portfolio {
+    /* width: 100%; */
+    /* z-index: -99; */
+}
+
+.my-portfolio.present {
+    /* position:fixed !important; */
+    /* display:none !important; */
+    width: 100%;
+    background-color: white !important;
+}
+
+#tweet-napper {
+    font-size: 7rem;
+}
+
+.tweetnapper-board {
+    /* width: 70%; */
+}
+
+.contact-info {
+    text-align: left;
+}
